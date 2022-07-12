@@ -1,0 +1,8 @@
+---
+- name: Create an Empty Directory
+  hosts: localhost
+  tasks:
+    - name: create a directory "test-ansible"
+      file:
+        path: /tmp/test-ansible
+        state: directory

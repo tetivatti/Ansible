@@ -1,0 +1,8 @@
+---
+- name: Copy Files
+  hosts: localhost
+  tasks:
+    - name: copying files with playbook
+      copy:
+        src: /etc/passwd
+        dest: /tmp/copy_passwd
